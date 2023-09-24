@@ -1,0 +1,288 @@
+/* styles.css */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Add more styles as needed */
+
+  /* Header Styles */
+header {
+  background-color: #121212;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid #ff4040; /* Red underline on hover */
+}
+
+/* Banner Styles */
+.banner {
+  background-image: url('banner-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.banner h1 {
+  font-family: 'Spin Cycle OT', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+} 
+
+
+/* Centralized Styles */
+
+/* Common styles for text elements */
+.text {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Quote section styles */
+.quote-section {
+  background-color: #121212;
+  color: wheat;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Apply styles to quote elements */
+.quote-1 {
+/* Specific styles for the first quote */
+font-family: 'Your Font', sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.quote-2 {
+  /* Specific styles for the second quote */
+  font-family: 'Your Font', sans-serif;
+  font-size: 24px;
+  color: #666;
+}
+/* Centralized Styles */
+.videos-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-thumbnail {
+  width: 200px;
+  height: 120px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.video-title {
+  font-family: 'Your Font', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.video-description {
+  font-family: 'Your Font', sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Add hover effects as needed */
+.video-thumbnail:hover {
+  opacity: 0.8;
+}
+
+/* Centralized Styles */
+.membership-section {
+  background-color: #f0f0f0; /* Replace with the background color from Figma */
+  color: #333; /* Replace with the text color from Figma */
+  font-family: 'Your Font', sans-serif; /* Replace with the specified font */
+  padding: 40px; /* Adjust as needed for spacing */
+
+  /* Add any additional global styles for the membership section here */
+  /* Additional Global Styles */
+.membership-section .container {
+  max-width: 1200px; /* Set a maximum width for content */
+  margin: 0 auto; /* Center the content horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  padding: 20px; /* Add padding to the container */
+}
+
+.membership-section .divider {
+  height: 1px; /* Horizontal line divider */
+  background-color: #ddd; /* Divider color */
+  margin: 20px 0; /* Adjust vertical spacing */
+}
+}
+
+/* Typography */
+.membership-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.membership-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Card or Section Styles */
+.membership-card {
+  background-color: #ffffff; /* Replace with card background color */
+  border: 1px solid #ccc; /* Add border styles */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.membership-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-size: 16px;
+}
+
+/* Button Styles */
+.join-button {
+  background-color: #ff4040; /* Replace with button color */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.join-button:hover {
+  background-color: #ff3030; /* Button color on hover */
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+  .membership-section {
+    /* Adjust styles for smaller screens */
+    padding: 20px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+.membership-card {
+  /* Adjust card styles for smaller screens */
+  padding: 10px;
+}
+
+.join-button {
+  /* Adjust button styles for smaller screens */
+  padding: 8px 16px;
+  font-size: 14px;
+   /* Add more responsive styles as needed */
+}
+
+/* Centralized Styles */
+.faq-section {
+  background-color: #f0f0f0; /* Replace with the background color from Figma */
+  color: #333; /* Replace with the text color from Figma */
+  font-family: 'Your Font', sans-serif; /* Replace with the specified font */
+  padding: 40px; /* Adjust as needed for spacing */
+}
+
+/* FAQ Item Styles */
+.faq-item {
+  border: 1px solid #ccc; /* Add a border around each FAQ item */
+  border-radius: 4px;
+  margin-bottom: 20px; /* Adjust vertical spacing */
+  padding: 20px; /* Add padding around each FAQ item */
+}
+
+.faq-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Add an accordion or toggle effect (JavaScript required) */
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+  .faq-section {
+    /* Adjust styles for smaller screens */
+    padding: 20px;
+  }
+
+  .faq-item {
+    /* Adjust FAQ item styles for smaller screens */
+    padding: 10px;
+  }
+/* Add more responsive styles as needed */
+}
+  
