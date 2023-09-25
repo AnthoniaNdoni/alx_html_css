@@ -5,4 +5,5 @@ Advanced CSS techniques are essential for creating modern, user-friendly, and vi
 Conclusion
 Advanced CSS techniques are essential for creating modern and responsive web designs. By mastering these techniques and best practices, you can build visually stunning and efficient web experiences that meet the demands of today's users.
 ![Alt text](image.png)
-![Alt text](../html_advanced/teer.jpeg)          
+
+![Alt text](image-1.png)    
