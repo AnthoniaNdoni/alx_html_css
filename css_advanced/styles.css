@@ -1,11 +1,12 @@
 /* styles.css */
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e2eae5;
   }
   
   h1 {
-    color: #333;
+   
+    color: #c91515;
   }
   
   /* Add more styles as needed */
@@ -13,7 +14,7 @@ body {
   /* Header Styles */
 header {
   background-color: #121212;
-  color: white;
+  color: blueviolet;
   padding: 20px 0;
 }
 
@@ -44,7 +45,7 @@ header {
 
 .nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(226, 109, 109);
   font-weight: 600;
 }
 
@@ -83,8 +84,8 @@ header {
 
 /* Quote section styles */
 .quote-section {
-  background-color: #121212;
-  color: wheat;
+  background-color: #342020;
+  color: rgb(132, 95, 26);
   padding: 50px 0;
   text-align: center;
 }
