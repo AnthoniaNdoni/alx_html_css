@@ -1,289 +1,404 @@
 /* styles.css */
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #e2eae5;
-  }
-  
-  h1 {
-   
-    color: #c91515;
-  }
-  
-  /* Add more styles as needed */
-
-  /* Header Styles */
-header {
-  background-color: #121212;
-  color: blueviolet;
-  padding: 20px 0;
+*, *::before, *::after {
+      box-sizing: border-box;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* variables */
+:root{
+    --font-size-small:1.2rem ;
+    --font-size-medium:1.6rem;
+    --font-size-medium:1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xl-large: 3.8rem;
+    --font-size-xx-large: 4.8rem;
+    --font-size-xxl-large: 5.8rem;
 
-.logo {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
+    --font-weight-regular:4rem;
+    --font-weight-bold:7rem
 
-.nav {
-  list-style: none;
+    --line-height-small:1.2;
+    --line-height-base:1.5;
+    --line-height-big:1.8;
+    --display:none;
+    --color-primary:#ffffff;
+    --color-secondary:#000000; 
+    --color-button:#C271FF;
+
+}
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 
-.nav li {
-  display: inline;
-  margin-right: 20px;
+html {
+  scroll-behavior: smooth;
+  font-size: 61.5%;
 }
 
-.nav a {
-  text-decoration: none;
-  color: rgb(226, 109, 109);
-  font-weight: 600;
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e2eae5;
+  }
+  a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-primary);
+
 }
 
-.nav a:hover {
-  border-bottom: 2px solid #ff4040; /* Red underline on hover */
+a:hover {
+    color: var(--color-button);
 }
 
-/* Banner Styles */
+.bg {
+    /* position: relative; */
+    background-image: url(images/Object.png);
+    background-size: cover;
+    /* z-index: -1; */
+    margin:-10px;
+}
+
+/* Nav bar */
+
+.header-logo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:80%;
+    margin: 1rem auto;
+    padding-top: 3em;
+    /* border: 1px solid red; */
+    
+}
+
+.nav {
+    display: flex;
+    column-gap: 3rem;
+    padding: 0;
+    /* border: 1px solid rgb(10, 1, 1); */
+    
+}
+
+.button {
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    background-color:var(--color-button);
+    color:var(--color-primary);
+    border: none;
+    font-size: var(--font-size-small);
+    
+}
+
+.button:hover {
+    background-color:var(--color-primary);
+    color:var(--color-button);
+    border: 1px solid var(--color-button);
+}
+
+/* header and banner */
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.section-header {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+    color: var(--color-primary);
+}
+
+.section-header h1 {
+    font-size: var(--font-size-xxl-large);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-medium);
+    text-align: center;
+}
+
+.section-header p {
+    padding-bottom:5rem;
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    letter-spacing: .2rem;
+    word-spacing: 5rem;
+}
+
+.section-banner {
+    text-align: center;
+    width: 100%;
+    padding-top: 15%;
+    color: var(--color-primary);
+}
+.banner-learn {
+    font-size: var(--font-size-large);
+    padding-bottom: 10%;
+    color:var(--color-primary)
+}
+
+.section-banner p b {
+    color:var(--color-button);
+}
+
 .banner {
-  background-image: url('banner-image.jpg'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 0;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    column-gap: 5%;
 }
 
-.banner h1 {
-  font-family: 'Spin Cycle OT', sans-serif;
-  font-size: 48px;
-  margin-bottom: 20px;
+
+.banner-item {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width:15% */
+   padding-bottom: 5%;
+}
+.banner-item img {
+    width: 60%;
+    border-radius: 60%;
 }
 
-.banner p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-} 
+/* Quote session */
+.quote-bg {
+    margin:-10px;
+    background-color: #C271FF;
+    color: var(--color-primary);
 
-
-/* Centralized Styles */
-
-/* Common styles for text elements */
-.text {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-/* Quote section styles */
-.quote-section {
-  background-color: #342020;
-  color: rgb(132, 95, 26);
-  padding: 50px 0;
-  text-align: center;
 }
 
 .quote {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
 }
 
-.quote-author {
-  font-size: 18px;
-  font-style: italic;
+.quote-items{
+   
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: .5rem;
+
+}
+.quote img {
+    width: 100%;
+    padding: 20%;
+
 }
 
-/* Apply styles to quote elements */
-.quote-1 {
-/* Specific styles for the first quote */
-font-family: 'Your Font', sans-serif;
-  font-size: 24px;
-  color: #333;
+/* .quote h3, p {
+    text-align: left;
+} */
+
+/* Section  video*/
+.section-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    /* flex-direction: column; */
+    
 }
 
-.quote-2 {
-  /* Specific styles for the second quote */
-  font-family: 'Your Font', sans-serif;
-  font-size: 24px;
-  color: #666;
-}
-/* Centralized Styles */
-.videos-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.section-video h2 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+    text-align: center;
 }
 
-.video-thumbnail {
-  width: 200px;
-  height: 120px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
+.section-video h2 b {
+    color:var(--color-button);
+}
+.section-video-content {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+.section-video-items{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
 }
 
-.video-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+.video img {
+    /* position: absolute; */
+    width: 100%;
+    padding-bottom:1rem ;
+    z-index: -1;
+
 }
 
-.video-title {
-  font-family: 'Your Font', sans-serif;
-  font-size: 18px;
-  color: #333;
+.play {
+    position: absolute;
+    z-index: 1;
+    /* width: 50%; */
+    padding-left: 5rem;
+    padding-top: 2rem;
+    align-items: center;
+    align-items: baseline;
+    /* border: 1px solid blue; */
 }
 
-.video-description {
-  font-family: 'Your Font', sans-serif;
-  font-size: 14px;
-  color: #666;
-  margin-top: 10px;
+.video-name{
+    display: flex;
+    flex-direction: row; 
+    /* border: 1px solid red; */
+    column-gap: 1rem;
+    align-items: center;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    color:var(--color-button)
 }
 
-/* Add hover effects as needed */
-.video-thumbnail:hover {
-  opacity: 0.8;
+.video-name img {
+    width:20%;
 }
 
-/* Centralized Styles */
-.membership-section {
-  background-color: #f0f0f0; /* Replace with the background color from Figma */
-  color: #333; /* Replace with the text color from Figma */
-  font-family: 'Your Font', sans-serif; /* Replace with the specified font */
-  padding: 40px; /* Adjust as needed for spacing */
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+.rating img {
+    width:40%;
 
-  /* Add any additional global styles for the membership section here */
-  /* Additional Global Styles */
-.membership-section .container {
-  max-width: 1200px; /* Set a maximum width for content */
-  margin: 0 auto; /* Center the content horizontally */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  padding: 20px; /* Add padding to the container */
 }
 
-.membership-section .divider {
-  height: 1px; /* Horizontal line divider */
-  background-color: #ddd; /* Divider color */
-  margin: 20px 0; /* Adjust vertical spacing */
-}
-}
 
-/* Typography */
-.membership-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
+/* membership */
+
+.member-bg{
+    background-color: var(--color-secondary);
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 1rem;
+    color: var(--color-primary);
 }
 
-.membership-description {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
+.section-membership {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding:1rem;
+    text-align: center;
+    row-gap: 5rem;
+    /* border: 1px solid red; */
+    padding-bottom: 4rem;
 }
 
-/* Card or Section Styles */
-.membership-card {
-  background-color: #ffffff; /* Replace with card background color */
-  border: 1px solid #ccc; /* Add border styles */
-  padding: 20px;
-  margin-bottom: 20px;
+.section-membership h2{
+    padding:3rem;
 }
 
-.membership-card h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.section-membership h2 b {
+    color: var(--color-button)
 }
 
-.membership-card p {
-  font-size: 16px;
+.membership-tag {
+    display: flex;
+    column-gap: 2rem;
+  
 }
 
-/* Button Styles */
-.join-button {
-  background-color: #ff4040; /* Replace with button color */
-  color: white; /* Text color */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+.membership-tag-items {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+/* 
+.membership-tag .button{
+    width:50%;
+} */
+
+/* FAQ */
+
+.section-faq {
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* row-gap: 3rem;
+    padding */
+    padding: 3rem;
+    /* border: 1px solid rebeccapurple; */
+
 }
 
-.join-button:hover {
-  background-color: #ff3030; /* Button color on hover */
+.section-faq h1 {
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-regular);
 }
 
-/* Responsive Design (Media Queries) */
-@media (max-width: 768px) {
-  .membership-section {
-    /* Adjust styles for smaller screens */
-    padding: 20px;
-  }
-
-  /* Add more responsive styles as needed */
-}
-.membership-card {
-  /* Adjust card styles for smaller screens */
-  padding: 10px;
+.faq-item-row {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    padding-bottom: 3rem;
 }
 
-.join-button {
-  /* Adjust button styles for smaller screens */
-  padding: 8px 16px;
-  font-size: 14px;
-   /* Add more responsive styles as needed */
+.faq-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
 }
 
-/* Centralized Styles */
-.faq-section {
-  background-color: #f0f0f0; /* Replace with the background color from Figma */
-  color: #333; /* Replace with the text color from Figma */
-  font-family: 'Your Font', sans-serif; /* Replace with the specified font */
-  padding: 40px; /* Adjust as needed for spacing */
+
+/* footer */
+
+.footer-bg{
+    background-color: #000000;
+    margin:0 -10px -10px -10px ;
+}
+.footer-container {
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
 }
 
-/* FAQ Item Styles */
-.faq-item {
-  border: 1px solid #ccc; /* Add a border around each FAQ item */
-  border-radius: 4px;
-  margin-bottom: 20px; /* Adjust vertical spacing */
-  padding: 20px; /* Add padding around each FAQ item */
+.footer-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
-.faq-item h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.social-media {
+    word-spacing: .5rem;
+    font-size: medium;
 }
 
-.faq-item p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Add an accordion or toggle effect (JavaScript required) */
-
-/* Responsive Design (Media Queries) */
-@media (max-width: 768px) {
-  .faq-section {
-    /* Adjust styles for smaller screens */
-    padding: 20px;
-  }
-
-  .faq-item {
-    /* Adjust FAQ item styles for smaller screens */
-    padding: 10px;
-  }
-/* Add more responsive styles as needed */
-}
+.copyright {
+    color: var(--color-primary);
+    text-align: center;
+    padding: 1rem;
+} 
   
